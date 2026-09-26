@@ -104,9 +104,6 @@ local function readWhitelistState()
     return environmentAllowed or globalAllowed
 end
 
-local isAuth = readWhitelistState()
-local isLocked = not isAuth
-local lockTitle = "未解锁"
 
 local protectedControls = {
     Button = true,
